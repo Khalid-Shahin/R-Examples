@@ -1,0 +1,47 @@
+<html>
+
+<h1>A Very Simple DPU</h1>
+
+<!-- some text, not part of the app -->
+<p>See the <a href="https://www.opencpu.org/jslib.html#lib-jsonrpc">chapter on JSON RPC in the opencpu.js manual</a> for more information</p>
+<button id="submitbutton">Smooth a Vector</button> <br>
+
+<pre><code></code></pre>
+
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="opencpu-0.5.js"></script>
+
+<script>
+//set CORS to call "stocks" package on public server
+ocpu.seturl("//public.opencpu.org/ocpu/library/stats/R")
+
+//some example data
+//to run with different data, edit and press Run at the top of the page
+var mydata = [1,2,3,4,5,5,999,5,4,4,3,2,1];
+
+//call R function: stats::var(x=data)
+$("#submitbutton").click(function(){
+    
+    var req = ocpu.rpc("lowess",{
+        x : mydata
+    }, function(output){
+        $("code").text(output.y.join("\n"));
+    }); 
+
+    //optional
+    req.fail(function(){
+        alert("R returned an error: " + req.responseText); 
+    });
+});
+
+</script>
+
+
+<style>
+pre {
+    position: relative;
+    height: 50px;
+}
+</style>
+</html>
