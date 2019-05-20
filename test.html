@@ -1,0 +1,179 @@
+<html class=""><head>
+    <script type="text/javascript">
+(function() {
+  var workerId = '_w_dd1b83a4';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+      <script type="text/javascript">
+      var __connect = {
+        shinyPre101: false
+      }
+      </script>
+      
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.3.2];jqueryui[1.12.1];showdown[0.3.1];highlight.js[6.2];ionrangeslider[2.1.6];strftime[0.9.2];bootstrap[3.3.7];font-awesome[5.3.1]</script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/json2-min.js"></script>
+<script src="jquery-3.4.1.js"></script>
+<link href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/shiny.css" rel="stylesheet">
+<script src="shiny.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/jqueryui/jquery-ui.min.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/showdown/compressed/showdown.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/highlight/highlight.pack.js"></script>
+<link href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/ionrangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+<link href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/ionrangeslider/css/ion.rangeSlider.skinShiny.css" rel="stylesheet">
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/strftime/strftime-min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/bootstrap/shim/html5shiv.min.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/bootstrap/shim/respond.min.js"></script>
+<link href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/font-awesome-5.3.1/css/all.min.css" rel="stylesheet">
+<link href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/font-awesome-5.3.1/css/v4-shims.min.css" rel="stylesheet">  <script src="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/shiny-showcase.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/highlight/rstudio.css">
+  <link rel="stylesheet" type="text/css" href="https://khalid-shahin.shinyapps.io/01_hello/_w_6356705a/shared/shiny-showcase.css">
+  <script type="text/markdown" id="showcase-markdown-content">This small Shiny application demonstrates Shiny's automatic UI updates. 
+
+Move the *Number of bins* slider and notice how the `renderPlot` expression is automatically re-evaluated when its dependant, `input$bins`, changes, causing a histogram with a new number of bins to be rendered.</script>
+  <title>Hello Shiny!</title>
+
+<script src="https://khalid-shahin.shinyapps.io/01_hello/__assets__/sockjs-0.3.min.js"></script>
+<script src="https://khalid-shahin.shinyapps.io/01_hello/__assets__/shiny-server-client.js"></script>
+<script>preShinyInit({reconnect:false,reconnectTimeout:0,disableProtocols:["xdr-streaming","xdr-polling","websocket"],transportDebugging:false,token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
+<link rel="stylesheet" type="text/css" href="https://khalid-shahin.shinyapps.io/01_hello/__assets__/rstudio-connect.css">
+<link rel="stylesheet" type="text/css" href="https://khalid-shahin.shinyapps.io/__static__/frontend/css/shinyapps.css"></head>
+
+<body>
+<script type="text/javascript" src="iframeResizer.contentWindow.min.js"></script>
+<script type="text/javascript" src="shinyapps.frame.content.js"></script>
+<script type="text/javascript" src="shinyapps.js"></script>
+
+  <table id="showcase-app-code">
+    <tbody><tr>
+      <td id="showcase-app-container" class="showcase-app-container-expanded" style="zoom: 100%; width: 960px;">
+        <div class="container-fluid">
+          <h2>Hello Shiny!</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <form class="well">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" for="bins">Number of bins:</label>
+                  <span class="irs js-irs-0  irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: visible;">1</span><span class="irs-max" style="visibility: visible;">50</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 23.1347%;">13</span></span><span class="irs-grid" style="width: 91.2%; left: 4.3%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -2.2%;">1</span><span class="irs-grid-pol small" style="left: 6.802721088435375%"></span><span class="irs-grid-pol small" style="left: 3.4013605442176873%"></span><span class="irs-grid-pol" style="left: 10.204081632653061%"></span><span class="irs-grid-text js-grid-text-1" style="left: 10.2041%; visibility: visible; margin-left: -2.2%;">6</span><span class="irs-grid-pol small" style="left: 17.006802721088434%"></span><span class="irs-grid-pol small" style="left: 13.60544217687075%"></span><span class="irs-grid-pol" style="left: 20.408163265306122%"></span><span class="irs-grid-text js-grid-text-2" style="left: 20.4082%; visibility: visible; margin-left: -3.2%;">11</span><span class="irs-grid-pol small" style="left: 27.210884353741495%"></span><span class="irs-grid-pol small" style="left: 23.80952380952381%"></span><span class="irs-grid-pol" style="left: 30.612244897959183%"></span><span class="irs-grid-text js-grid-text-3" style="left: 30.6122%; visibility: visible; margin-left: -3.2%;">16</span><span class="irs-grid-pol small" style="left: 37.414965986394556%"></span><span class="irs-grid-pol small" style="left: 34.01360544217687%"></span><span class="irs-grid-pol" style="left: 40.816326530612244%"></span><span class="irs-grid-text js-grid-text-4" style="left: 40.8163%; margin-left: -3.2%;">21</span><span class="irs-grid-pol small" style="left: 47.61904761904761%"></span><span class="irs-grid-pol small" style="left: 44.21768707482993%"></span><span class="irs-grid-pol" style="left: 51.0204081632653%"></span><span class="irs-grid-text js-grid-text-5" style="left: 51.0204%; visibility: visible; margin-left: -3.2%;">26</span><span class="irs-grid-pol small" style="left: 57.82312925170068%"></span><span class="irs-grid-pol small" style="left: 54.42176870748299%"></span><span class="irs-grid-pol" style="left: 61.224489795918366%"></span><span class="irs-grid-text js-grid-text-6" style="left: 61.2245%; visibility: visible; margin-left: -3.2%;">31</span><span class="irs-grid-pol small" style="left: 68.02721088435374%"></span><span class="irs-grid-pol small" style="left: 64.62585034013605%"></span><span class="irs-grid-pol" style="left: 71.42857142857143%"></span><span class="irs-grid-text js-grid-text-7" style="left: 71.4286%; visibility: visible; margin-left: -3.2%;">36</span><span class="irs-grid-pol small" style="left: 78.2312925170068%"></span><span class="irs-grid-pol small" style="left: 74.82993197278911%"></span><span class="irs-grid-pol" style="left: 81.63265306122449%"></span><span class="irs-grid-text js-grid-text-8" style="left: 81.6327%; margin-left: -3.2%;">41</span><span class="irs-grid-pol small" style="left: 88.43537414965986%"></span><span class="irs-grid-pol small" style="left: 85.03401360544217%"></span><span class="irs-grid-pol" style="left: 91.83673469387755%"></span><span class="irs-grid-text js-grid-text-9" style="left: 91.8367%; visibility: visible; margin-left: -3.2%;">46</span><span class="irs-grid-pol small" style="left: 97.27891156462584%"></span><span class="irs-grid-pol small" style="left: 94.5578231292517%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-10" style="left: 100%; visibility: visible; margin-left: -3.2%;">50</span></span><span class="irs-bar" style="left: 4.4%; width: 22.3347%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 22.3347%;"></span></span><input class="js-range-slider irs-hidden-input shiny-bound-input" id="bins" data-min="1" data-max="50" data-from="30" data-step="1" data-grid="true" data-grid-num="9.8" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number" tabindex="-1" readonly="">
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-8">
+              <div id="distPlot" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"><img src="data:image/png;base64,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mTJFCPH222/7+/sPHTp05MiRGRkZzc3NU6dO/bUd/qq9zF+1UL928vauueYaIYTJZJo8efLkyZOdnZ2rqqq0Wu0lX2ugR/CGEFxVPDw80tPTP/7448zMTK1We/jwYSGE5foXy1Uhf/7znz08PBISEuLj4/fu3RsZGTlixAjLmbCUlBQHB4fp06cPGzasuLj4mmuu+c1vfmO5SlNm0KBBQoi33nrLYDDs379fo9EoitK1POikpc43tMRkTU1NYmKiEGLs2LH79+9vG7/MDtsvTkhIyOU0fPkL1YXJ21uwYMErr7yydu3ampoas9n86aef6vX677//vpPXGuhB7E3iqjJx4sSNGzded911u3bt+tvf/hYaGvree+9NmDBBCLFs2bJBgwZt3rz56NGjGo1m69atjzzyiKOj4+7du8PCwt55553HH39cCKHT6Xbu3HnzzTefOXPmwoULb7/9diflHn744Tlz5jQ3Nx87dmzFihWWQpY3b/xanbTUudDQ0KCgICFETEyMEMJyhYubm9u4ceMuv8P2i3OZDV/+QnVh8vYGDhy4b9++SZMmZWdn79ixY8aMGfv27fPz8+vktQZ6kKb7pxaAq0l1dXVRUVH//v1HjBghhMjPzx83btzUqVO3b99u69b6FhYKdoKDrsAv1NTUxMXFtba2Pvfccx4eHm+++aYQ4o477rB1X30OCwU7wd4k0FFOTs6LL75YUFDQ0tISFha2ZMmShx56qP1FnrBgoWAPiEkAAKS4hAcAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApR1s3AAA9qeDEuaNl59Sp5d7fcWaUjzq1YCvEJICrSkVd0xG1YnLQAJ2IUqcUbIaDrgAASBGTAABIEZMAAEhxbhJA7/qp6kJFXbM6tXzddeoUgv0gJgH0rkPHz+UXn1WnVly4h7MjB8nQk/h9AgBAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQA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r2tqNZ89r1I59/79HB1E9blmdcr1d9K66rSVav2f3k/r4OXmWH5WvT8sgwboyuvUKxc2qL9qtS6fGjE5cuTIxx57bP78+e0HMzMzX3zxxYMHD/Z2dQAAukyNmPz2229nzZrl6ekZGRmp1+vr6+sNBkN1dXVWVtaYMWN6uzoAAF2mRkwKIVpaWnJzc0tKSmpraz09PYcNG5aQkODo6KhCaQAAukylmAQA4ErExwsAACBFTAIAIEVMAgAgRUwCACBFTAIAIMVbMq4Mb7755vr16729vW3dSF9RXV3t4ODg6elp60b6isrKSp1O5+7ubutG+ory8nIXF5cBAwbYupG+wmg0vvrqq9OnT7d1I1ceYvLK4OrqunTp0gcffNDWjfQVb7/9tpub2913323rRvqKN954Y/DgwYmJibZupK947bXX/uM//mPGjBm2bqSveOmll/r162frLq5IHHQFAECKmAQAQIqYBABAipgEAECKmAQAQIorXa8MWq2WD6lvT6vVarVaW3fRh7AgHbAgHbAgXcY3hFwZmpqaFEVxcnKydSN9RWNjo0aj0el0tm6krzCZTFqtliv+21y4cKFfv358W1+b8+fPOzk5kZRdQEwCACDFuUkAAKSISQAApIhJAACkiEkAAKSISQAApIhJAACkiEkAAKSIyT5qypQpzv8yc+ZMy+B33303evRoT0/PBx54oLGx0bYdquzUqVPTpk0bMGBATEzMDz/8YBm02wV5/fXXnX/pq6++Ena8IEKIt956Kzg4uH///gkJCYWFhZZBe16QdevWDR061NPT8+677z537pxl0J4XpOsU9ElDhgzZvXu3wWAwGAzHjx9XFKW5uXnw4MHvvPPOyZMnJ0+e/Pzzz9u6R1WNHTs2LS3t9OnTjz/+eEJCgmLfC1JVVWX4l507d1577bUNDQ32vCBFRUX9+vXLyck5ffr0kiVLbrrpJsW+f0N2797t7++fk5Pz888/JyUlLVmyRLHvBekOYrIvampqcnJyam5ubj+Yk5NzzTXXWG7n5uaGhYXZojXbOHz48PDhw81ms6IoJpOpoKBAse8Fae93v/tdfn6+Yt8LcurUKb1en5+fX1dX9+STTyYmJir2vSApKSmWaFQUpayszNvbW7HvBekODrr2RcePH3dxcZkzZ05ISMhdd91VVlYmhCguLr7uuussD4iMjPzpp5/MZrNN21TPkSNHIiIiFi5cGB4efvfdd3t4eAj7XpA2X331VWtr6w033CDse0H8/PxeeeWVmJgYd3f3995776233hL2vSARERFffPFFcXHxuXPn3n333erq6oaGBntekO4gJvsio9Ho6+u7cOHC7OxsnU53xx13CCFqa2v1er3lAQMGDGhpaWk733DVKy8v37p165gxY7KzswcPHhiDnqgAAAt+SURBVDxv3jxh3wtiYTably1b9vzzz1vu2vOCFBYWvvTSS3l5eQ0NDQsWLJg/f76w7wWZN29eXFzc8OHD/fz8amtrhRAXLlyw5wXpDj4+vy+68cYbDQaD5fbatWsHDBhQWVnp6elZX19vGayvr9dqtW5ubrbrUVXOzs7x8fELFy4UQrz22mtubm5VVVX2vCAW+/fv1+v1ERERlrv2vCBbt26dPn16TEyMEGL58uXu7u5nz5615wVxcHBYt27dqlWrFEWprKx84403vLy87HlBuoO9yb5o//79ubm5lts6nc7yBUnDhg1ry87CwsLg4GAHB3t5+QIDA9tuOzg4ODg4aLVae14Qi82bN99zzz1td+15QVpbW9uOHyqK0tLSoiiKPS9IQUHBs88+q9PpnJyc9u3bN2LECAcHB3tekG6x8blRWPPFF194eHh8+eWXZ86cefrpp9tftrdly5bz58/PmTMnJSXF1m2q5/z5897e3hs3bjx79uxTTz0VFxen2PeCKIpiNpuHDRtmuQrawp4X5MiRIx4eHnv27Dlz5szjjz8eHx+v2PeCVFVVubm5ffbZZ8XFxcOHD1+3bp1i3wvSHcRkH/U///M/fn5+er3+1ltvPXnypGXwm2++GTFihLe39wMPPGAymWzbocq+/PLLESNGuLm5TZs2rbS01DJozwty+PBhf3//DoP2vCAff/xxeHi4m5vbjBkz2v71YM8LsmnTJn9/f39//+eff95ylbhi3wvSZXwtMwAAUhyYBgBAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAipgEAECKmAQAQIqYBABAiphEX7FgwYL777/fcvvs2bOOjo4rV6603D1w4IBOp2toaLh4q+3btzs7O1tuOzo6trS0tB/pgh6ZpMNs3Z/HViV6ajVWr169Y8eOHlnVXzvJxx9/nJGR0c2isGfEJPqKhISEvLw8y+09e/bodLq///3vlrv5+fljx451dXW9eKsRI0a8++67nY90QY9MctXo5mqYTKZNmzbdfPPNNnlpZs+evWHDhtbW1m7Whd0iJtFXTJgwoaioqKqqSgiRk5Pz6KOP7t27t7GxUQiRl5c3YcIEIcSbb74ZEBDg4uIybty4oqIiIURdXd0LL7wghJgyZUpra2tISMjp06ctI4WFhePHj09LS/P39x86dOju3bsthd57773g4ODg4OD09PTg4OD2PVw8ybFjx2688cYnn3zSx8dn/PjxeXl5Y8eO1ev1TzzxhGWTvXv3jhw50tvb+5577jl9+rTV2RoaGjZt2hQREeHu7j5nzpyKior2D5P1efHM6enpcXFxiqK0traOHj1669at7Uu0TXjxhoWFhQkJCS+99NKIESPy8/NjYmIsj2y7vXHjxqSkpPvuu8/DwyM2NrawsNDqagghLn4isv7bvPPOOzNnznRwcGh7sTrfpPM173yS1tbWxYsXe3p6+vj4vPjii0IInU4XHx+/cePGS/0CAhIK0GeEhIRkZWUpinLNNdccOnRo9OjRu3fvVhRl6NCh27dvLy8v1+l0ubm5lZWV999//8KFCxVFMRgMERERls21Wm1zc3PbiMFgcHV1ffnllxsaGp566qlx48YpilJQUDBw4MBvvvmmrKzsxhtvDAoK6tBDh0mKioo0Gs0777xTXV09ZsyYQYMGlZaWfvXVV0KI6urqqqoqb2/vrKysmpqahQsXTp482epsxcXF7u7uO3furK6ufuCBB+644472j7Hap9WZzWbz+PHjMzIyVq9enZiY2L5E22xWNzQYDO7u7osWLSooKMjLy7vhhhssD267/dFHHzk6Or7xxhsVFRVPP/30iBEjzGbzxath9YlY7b+96dOnHzp0qP2L1fkmna9555N8+umn4eHhJSUlBw8edHJyOnbsmKIou3fvvuuuuy756wdYRUyiD3nooYeeffbZsrIyHx+f1tbWZ5555plnnjEajVqttq6u7vz58yUlJYqimEymZ599dt68ecqlYlKv11si5OjRo5bB//zP//zDH/5gefyWLVsuJya9vLwskzz99NNLliyxPMzf3/+nn356//33b7/9dstIQ0ODi4tLa2vrxbO9/vrr999/v2WkoqLCcsKv7TFW+5TNfPTo0cDAwCFDhpSVlbUv0Tab1Q0NBoObm1tjY6PSLhqVX8bktddea4nGpqYmLy+vH3/88eLVsPpErPbf3pAhQ+rq6pRfxmQnm3S+5p1P8tFHH4WGhhYUFCiKUllZaXnKpaWl1113nQJ0iaOt92aBf0tISNiwYcPw4cMnTZrk4OAwZcqUJ598MiYmZsyYMXq93mw2b9y4MSsrS6vVOjk5DRw48JIT+vn5OTo6CiEs/xVCnDx5cuzYsZbbQUFBl9PVwIED2ybx9fW1DFpGTpw4kZ2d3Tao1WrLy8v9/Pw6zGA0GtuO7g4cOFCn01VWVrZtZbVP2cyRkZFhYWE+Pj7+/v5Wu7W6oRDC19dXp9N1eLCiKG23Q0NDNRqNEKJfv37BwcEnT54MCwu7nCditf829fX1JpNJr9d3GO9kE9Hpmnc+ye2333769OlZs2Y5ODgsWbJk6dKlQgh/f/+ff/65ubm5X79+F9cCOse5SfQhEyZMOHDgwPbt2ydNmiSEiI2N/fHHH7du3Wo5MfnZZ59t2rTpr3/96759+x544IHLmdDyd789X1/f48ePW26XlZV1s2FfX9958+YZjUaj0Xjq1KmjR4+2D7/2DystLbXcrq6ubmpq8vHxuWSfVmfes2dPVVXVV199dfjw4V/VklarbXtM25Wx7VfgxIkTbT89ceLExWHfyRO5uP9L6sImlzPJiRMnEhMTf/rpp82bN2dkZGRmZvZULdgtYhJ9SGBgoJ+f32effWaJSScnp/j4+A8++MASk0ajUafTaTSavLy8lStX1tTUXHz5Yn19feclbr/99vfff/+7774zGo1//vOfrT7mkpO0+e1vf5udnZ2bm3vmzJkXXnjhzjvvvPgvcn19/cyZMzMzM3fv3l1bW/vkk0/OmjXL6i7UJWdubGxctGjR6tWrX3755SVLlpjN5osbvmRLHh4eBQUFR44cqa2tXbNmTdv4wYMH09PTz5w5s3z5cl9f37ZdyfaTd+GJ6PV6Z2fny1/Sbvrss89mzZp16tQpT09PrVZ77tw5IcTJkyeDg4PZlUTXEJPoWxISEgICAoYNG2a5a7nYcvz48UKI3/3udy4uLkFBQU888cSLL774448/fvTRR+23nTt3blBQkNW3V7aJjo5OSUm55ZZb4uPjk5OTLz4YeDmTtBk8eHB6evrixYsHDx68d+/eDz/80Opsvr6+69evX7RoUVBQUG1t7dq1a7s286uvvjpmzJi4uLh7773XbDb/5S9/ubjhS7YUERGxZMmSG2+8MSEhYfHixW3j06dPz8rKCgwMzMnJ+fjjjx0cHC6ePCQk5Nc+ESHEtddeW1xcfDmP7L6FCxcOGTIkIiJi1KhRo0aNuu+++4QQxcXFkZGR6jSAq4+m/ckJ4KpXWlp65syZqKgoIcSBAweeeeaZXbt22bop29u4ceOWLVt66V0Ta9asaWxsbHsLjfpSUlLCwsLuvfdeWzWAKxp7k7AvpaWlU6ZMOXXqVFNT02uvvTZt2jRbd3T1e+ihh7Zu3dp2iFhlTU1Ne/bsufPOO21SHVcBYhL2JT4+funSpaNGjQoKCtLpdA8//LCtO7r6OTs7JyYm7ty50ybVMzMzFyxYcMlzqIAMB10BAJBibxIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAAApYhIAACliEgAAKWISAACp/wPeUVq0XRKvmAAAAABJRU5ErkJggg==" width="610" height="400"></div>
+            </div>
+          </div>
+        </div>
+        </td><td id="showcase-sxs-code" class="showcase-sxs-code-collapsed" style="display: table-cell;"><div id="showcase-code-tabs">
+          <a id="showcase-code-position-toggle" class="btn btn-default btn-sm" onclick="toggleCodePosition()"><i class="fa fa-level-down"></i> show below</a>
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#app_R_code" data-toggle="tab">app.R</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="showcase-code-content" style="height: 550px;">
+            <div class="tab-pane active" id="app_R_code">
+              <pre class="shiny-code"><code class="language-r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="comment"># Define UI for app that draws a histogram ----</span>
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+
+  <span class="comment"># App title ----</span>
+  <span class="identifier">titlePanel</span><span class="paren">(</span><span class="string">"Hello Shiny!"</span><span class="paren">)</span>,
+
+  <span class="comment"># Sidebar layout with input and output definitions ----</span>
+  <span class="identifier">sidebarLayout</span><span class="paren">(</span>
+
+    <span class="comment"># Sidebar panel for inputs ----</span>
+    <span class="identifier">sidebarPanel</span><span class="paren">(</span>
+
+      <span class="comment"># Input: Slider for the number of bins ----</span>
+      <span class="identifier">sliderInput</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">"bins"</span>,
+                  <span class="identifier">label</span> <span class="operator">=</span> <span class="string">"Number of bins:"</span>,
+                  <span class="identifier">min</span> <span class="operator">=</span> <span class="number">1</span>,
+                  <span class="identifier">max</span> <span class="operator">=</span> <span class="number">50</span>,
+                  <span class="identifier">value</span> <span class="operator">=</span> <span class="number">30</span><span class="paren">)</span>
+
+    <span class="paren">)</span>,
+
+    <span class="comment"># Main panel for displaying outputs ----</span>
+    <span class="identifier">mainPanel</span><span class="paren">(</span>
+
+      <span class="comment"># Output: Histogram ----</span>
+      <span class="identifier">plotOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"distPlot"</span><span class="paren">)</span>
+
+    <span class="paren">)</span>
+  <span class="paren">)</span>
+<span class="paren">)</span>
+
+<span class="comment"># Define server logic required to draw a histogram ----</span>
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+
+  <span class="comment"># Histogram of the Old Faithful Geyser Data ----</span>
+  <span class="comment"># with requested number of bins</span>
+  <span class="comment"># This expression that generates a histogram is wrapped in a call</span>
+  <span class="comment"># to renderPlot to indicate that:</span>
+  <span class="comment">#</span>
+  <span class="comment"># 1. It is "reactive" and therefore should be automatically</span>
+  <span class="comment">#    re-executed when inputs (input$bins) change</span>
+  <span class="comment"># 2. Its output type is a plot</span>
+  <span class="identifier">output</span><span class="operator">$</span><span class="identifier">distPlot</span> <span class="operator">&lt;-</span> <span class="identifier">renderPlot</span><span class="paren">(</span><span class="paren">{</span>
+<span id="srcref_45,33,52,45,33,45" style="">
+    <span class="identifier">x</span>    <span class="operator">&lt;-</span> <span class="identifier">faithful</span><span class="operator">$</span><span class="identifier">waiting</span>
+    <span class="identifier">bins</span> <span class="operator">&lt;-</span> <span class="identifier">seq</span><span class="paren">(</span><span class="identifier">min</span><span class="paren">(</span><span class="identifier">x</span><span class="paren">)</span>, <span class="identifier">max</span><span class="paren">(</span><span class="identifier">x</span><span class="paren">)</span>, <span class="identifier">length.out</span> <span class="operator">=</span> <span class="identifier">input</span><span class="operator">$</span><span class="identifier">bins</span> <span class="operator">+</span> <span class="number">1</span><span class="paren">)</span>
+
+    <span class="identifier">hist</span><span class="paren">(</span><span class="identifier">x</span>, <span class="identifier">breaks</span> <span class="operator">=</span> <span class="identifier">bins</span>, <span class="identifier">col</span> <span class="operator">=</span> <span class="string">"#75AADB"</span>, <span class="identifier">border</span> <span class="operator">=</span> <span class="string">"white"</span>,
+         <span class="identifier">xlab</span> <span class="operator">=</span> <span class="string">"Waiting time to next eruption (in mins)"</span>,
+         <span class="identifier">main</span> <span class="operator">=</span> <span class="string">"Histogram of waiting times"</span><span class="paren">)</span>
+</span>
+    <span class="paren">}</span><span class="paren">)</span>
+
+<span class="paren">}</span>
+
+<span class="comment"># Create Shiny app ----</span>
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span><span class="paren">)</span></code></pre>
+            </div>
+          </div>
+          <small class="showcase-code-license text-muted">
+            Code license: 
+            <a href="http://www.r-project.org/Licenses/MIT">MIT</a>
+          </small>
+        </div></td>
+      
+    </tr>
+  </tbody></table>
+  <div class="container-fluid shiny-code-container well" id="showcase-well">
+    <div class="row">
+      <div id="showcase-app-metadata" class="col-sm-4">
+        <h4 class="text-muted shiny-showcase-apptitle">
+          Hello Shiny!
+          <small>
+            <br>
+            by
+            <a href="http://www.rstudio.com/" class="shiny-showcase-appauthor">RStudio, Inc.</a>
+            
+          </small>
+        </h4>
+        
+      </div>
+      <div id="showcase-code-inline" class="col-sm-8" style="display: block;">
+        
+      <div id="readme-md"><p>This small Shiny application demonstrates Shiny's automatic UI updates. </p>
+
+<p>Move the <em>Number of bins</em> slider and notice how the <code>renderPlot</code> expression is automatically re-evaluated when its dependant, <code>input$bins</code>, changes, causing a histogram with a new number of bins to be rendered.</p></div></div>
+    </div>
+  </div>
+
+
+
+<div id="ss-connect-dialog" style="display: none;"></div><div id="ss-overlay" class="ss-gray-out" style="display: none;"></div></body></html>

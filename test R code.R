@@ -1,11 +1,24 @@
-library(jsonlite)
+library(shiny)
 
-#parse input from JSON into R
-jsoninput <- '{"x" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}'
-fnargs <- fromJSON(jsoninput)
+# Define UI for application that plots random distributions 
+shinyUI(pageWithSidebar(
+  
+  # Application title
+  headerPanel("Hello Shiny!"),
+  
+  # Sidebar with a slider input for number of observations
+  sidebarPanel(
+    sliderInput("obs", 
+                "Number of observations:", 
+                min = 1,
+                max = 1000, 
+                value = 500)
+  ),
+  
+  # Show a plot of the generated distribution
+  mainPanel(
+    plotOutput("distPlot")
+  )
+))
 
-#the actual function call
-result <- do.call(stats::sd, fnargs)
 
-#convert result back to JSON
-jsonoutput <- toJSON(result)
